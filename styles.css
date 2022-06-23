@@ -23,7 +23,7 @@ h1 {
 }
 
 ul {
-      margin: 0 0 10px;
+      margin: 0;
       padding: 0;
 }
 
@@ -35,6 +35,10 @@ li {
       line-height: 1;
       list-style: none;
       font-family: "Noto Sans JP", sans-serif;
+}
+
+li:first-letter {
+      text-transform: capitalize;
 }
 
 .weather-app {
@@ -49,7 +53,17 @@ li {
                   rgb(209, 240, 248) 98%);
 }
 
-.temperature {
+.overview {
+      margin-bottom: 20px;
+}
+
+.weather-temperature img {
+      margin-right: 5px;
+      height: 64px;
+      width: 64px;
+}
+
+.weather-temperature strong {
       color: rgb(36, 105, 253);
       font-size: 70px;
       font-weight: 400;
@@ -57,14 +71,19 @@ li {
       font-family: "Noto Sans JP", sans-serif;
 }
 
-.units {
+.weather-temperature .units {
       position: relative;
+      font-size: 16px;
       top: -34px;
-      color: rgb(36, 105, 253);
-      font-family: "Noto Sans JP", sans-serif;
 }
 
-.search-form {
-      margin-bottom: 20px;
+.weather-temperature .active {
+      color: rgb(127, 186, 253);
+      cursor: default;
+}
+
+footer {
+      text-align: center;
       font-family: "Noto Sans JP", sans-serif;
+      font-size: 12px;
 }
