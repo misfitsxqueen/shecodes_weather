@@ -22,6 +22,17 @@ h1 {
       font-family: "Noto Sans JP", sans-serif;
 }
 
+h2 {
+      color: rgb(36, 105, 253);
+      font-size: 44px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 30px;
+      padding: 2px;
+      margin: 1em auto 1em;
+      font-family: "Noto Sans JP", sans-serif;
+}
+
 ul {
       margin: 1em auto 1em;
       padding: 0;
@@ -48,7 +59,7 @@ li:first-letter {
       margin: 30px auto;
       border-radius: 20px;
       max-width: 1000px;
-      height: 550px;
+      height: 700px;
       box-shadow: 20px 15px 30px 5px rgba(2, 18, 78, 0.4);
       background: linear-gradient(181deg,
                   rgb(133, 211, 252) 0%,
@@ -57,6 +68,12 @@ li:first-letter {
 
 .overview {
       margin-bottom: 20px;
+}
+
+.conditions {
+      position: relative;
+      top: -120px;
+      right: -150px;
 }
 
 .weather-temperature img {
